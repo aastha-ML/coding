@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input id="numb">
+<p id="abc">
+<button type="button" onclick="myFunction()">Submit</button>
+<script>
+
+function myFunction() {
+  var x;
+  x = document.getElementById("numb").value;
+  var y= x.split(" ");
+  if(y.length > 1)
+  	var z=(y[0]+" "+y[1].charAt(0));
+  	  	document.getElementById("abc").innerHTML=z;
+  	  	alert(z);
+}
+</script>
+
+</body>
+</html>  

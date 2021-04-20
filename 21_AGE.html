@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input type="submit" onclick="abc()">
+<p id="bcd">
+<script>
+    function abc(){
+        today=new Date();
+        var x=new Date("2000/5/4");
+
+        alert(Math.ceil((x.getDate()-today.getDate())/(one))+" days left till cristmas");
+
+
+    }
+</script>
+</body>
+</html>
+
+
+
+
+function calculate_age(dob) { 
+    var diff_ms = Date.now() - dob.getTime();
+    var age_dt = new Date(diff_ms); 
+  
+    return Math.abs(age_dt.getUTCFullYear() - 1970);
+}
+
+console.log(calculate_age(new Date(1982, 11, 4)));
+
+console.log(calculate_age(new Date(1962, 1, 1)));

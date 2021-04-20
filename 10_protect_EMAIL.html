@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input id="numb">
+<p id="abc">
+<button type="button" onclick="myFunction()">Submit</button>
+<script>
+
+function myFunction() {
+  var x;
+  x = document.getElementById("numb").value;
+  var y= x.split("@");
+ var part1=y[0];
+ avg=part1.length / 2;
+ part1=part1.substring(0,(part1.length - avg));
+ var z=part1+"...@"+y[1];
+
+
+  	  	document.getElementById("abc").innerHTML=z;
+  	  	alert(z);
+}
+</script>
+
+</body>
+</html>  

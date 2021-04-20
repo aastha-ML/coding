@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <input type="Submit" onclick="first()"/>
+        <script>
+
+            function first(array, n) 
+            {
+                if (array == null) 
+                    return void 0;
+                if (n == null) 
+                    return array[0];
+                if (n < 0)
+                    return [];
+                return array.slice(0,n);
+            };
+
+alert(first([7, 9, 0, -2]));
+alert(first([],3));
+alert(first([7, 9, 0, -2],3));
+alert(first([7, 9, 0, -2],6));
+alert(first([7, 9, 0, -2],-3))
+        </script>
+    </body>
+</html>

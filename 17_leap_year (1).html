@@ -1,0 +1,28 @@
+
+<html>
+    <body>
+        <input id="inp">
+        <button type="button" onclick="show_date()">Submit</button>
+        
+        <script>
+            function show_date()
+            {
+                var y=document.getElementById("inp").value;
+                if((y%4==0))
+                {
+                    if(y%100==0)
+                    {
+                        if(y%400==0)
+                        alert("Leap Year");
+                        else
+                        alert("Not Leap Year");
+                    }
+                    else
+                    alert("Leap Year");
+                }
+                else
+                alert("Not Leap Year");   
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<input id="inp">
+<input type="submit" onclick="abc()">
+<p id="bcd">
+<script>
+    function abc(){
+        x=document.getElementById("inp").value;
+        x=new Date(x);
+        y=x.getDay();
+        var a = ["Sunday","Monday","Tuesday","Wednesday","thursday","Friday","Saturday"];
+        day=a[y];
+        alert(day);
+    }    
+</script>
+</body>
+</html>

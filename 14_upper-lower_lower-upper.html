@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input id="numb">
+<p id="abc">
+<button type="button" onclick="myFunction()">Submit</button>
+<script>
+
+function myFunction() {
+  var x;
+  var z="";
+  x = document.getElementById("numb").value;
+var y=x.length;
+ for(var i=0;i<y;i++)
+ {
+ 	if(x[i]===x[i].toUpperCase())
+ 		z=z+x[i].toLowerCase();
+
+ 	else if(x[i]===x[i].toLowerCase())
+ 		z=z+x[i].toUpperCase();
+ }
+
+  	  	alert(z);
+}
+</script>
+
+</body>
+</html>  

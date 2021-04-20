@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<input id="numb">
+<input type="submit" onclick="abc()">
+<p id="bcd">
+<script>
+    function abc(){
+    	var y="";
+var x=document.getElementById("numb").value;
+var a="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+for(var i=0;i<x;i++)
+{
+y=y+a.charAt(Math.floor(Math.random()*a.length));
+}
+
+alert(y);
+
+
+
+    }
+</script>
+</body>
+</html>

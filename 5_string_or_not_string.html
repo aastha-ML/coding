@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input id="numb">
+
+<button type="button" onclick="myFunction()">Submit</button>
+<script>
+function myFunction() {
+  var x;
+  var y= /^[a-zA-z" "]+$/;
+
+  x = document.getElementById("numb").value;
+  if (x.match(y))
+      alert("IT IS A STRING");
+    else alert("it is not a string");
+}
+</script>
+
+</body>
+</html>  

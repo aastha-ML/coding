@@ -1,2 +1,2 @@
-# assignments full stack
+# full stack web development assignments
 coding assignments
